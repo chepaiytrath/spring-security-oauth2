@@ -37,6 +37,4 @@ public class SpringSecurityOauth2Application extends WebSecurityConfigurerAdapte
                 .and().logout().logoutSuccessUrl("/").permitAll()
                 .and().csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
-
-
 }
